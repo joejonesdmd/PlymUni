@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Baloo Bhaina 2', Arial, Helvetica, sans-serif;
+    background-color: #092074;
+     width: 100vw;
+     height: 100vh;
+     color: #fff;
+    font-size: 20px;
+    
+        
+}
+
+
+main{
+    font-family: 'Baloo Bhaina 2', Arial, Helvetica, sans-serif;
+    background-color: #092074;
+    color: #fff;
+}
+
+header{
+    padding: 5px 10px;
+    background-color: #094074;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-template-areas: "brand nav";
+    font-family: 'Baloo Bhaina 2', Arial, Helvetica, sans-serif;
+}
+
+.brand-logo{
+    grid-area: brand;
+}
+
+.main-nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navigation-item{
+    margin: 0 10px;
+    
+}
+
+.navigation-item a{
+    text-decoration: none;
+    color: white;
+    background: #294C60;
+    font-size: 12px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 1px 50px;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navigation-item a:hover{
+    color: black;
+    background: white;
+    font-size: 16px;
+    transition: 0.1s;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+
+.projectPageContent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.projectContent {
+    width: 100vw;
+}
+
+.pboxs{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.pbox{
+    width: 33vw;
+    height: 38.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+#projectBox1{
+
+    background-image: url(#);
+    background-color: #00072D;
+    background-size: cover;
+    opacity: 1;
+    word-wrap: break-word;
+    text-decoration: none;
+
+}
+
+#projectBox2{
+
+    background-image: url(#);
+    background-color: #00672D;
+    background-size: cover;
+    opacity: 1;
+    word-wrap: break-word;
+    text-decoration: none;
+
+}
+
+#projectBox3{
+
+    background-image: url(#);
+    background-color: #0087002D;
+    background-size: cover;
+    opacity: 1;
+    word-wrap: break-word;
+    text-decoration: none;
+
+}
+
+
+.bannerImage{
+    width: 100%;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.padding20{
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 480px){
+    .contactGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "contactLeft"
+                             "contactRight"
+                             "contactBottom";
+        width: 95%;
+        
+    }
+}
+
+footer{
+    background-color: #04043d;
+    font-family: 'Baloo Bhaina 2', Arial, Helvetica, sans-serif;
+
+}
+
+.socialMedia{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.socialMedia > a {
+    text-decoration: none;
+    color: white;
+    transition: 2s;
+}
+
+.socialMedia > a:hover {
+    text-decoration: none;
+    color: grey;
+    transition: 0.1s;
+}
+
+.mainText{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aboutGrid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "aboutLeft aboutRight"
+                         "aboutBottom aboutBottom";
+    grid-template-rows: (2, 1fr);
+}
+
+.aboutLeft{
+    grid-area: aboutLeft;
+    color: white;
+    
+}
+
+.aboutBottom{
+    grid-area: aboutBottom;
+    color: white;
+    
+}
+
+.aboutRight{
+    grid-area: aboutRight;
+    color: white;
+    font-size: 20px;
+    background-image: url('../assets/img/me.jpg');
+    background-size: 232px 308px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.contactGrid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "contactLeft contactRight"
+                        "contactBottom contactBottom";
+    grid-template-rows: (2, 1fr);
+}
+
+.contactLeft{
+    grid-area: contactLeft;
+    color: white;
+    
+}
+
+.contactRight{
+    grid-area: contactRight;
+    color: white;
+    font-size: 20px;
+}
+
+.contactBottom{
+    grid-area: contactBottom;
+    background-image: url('../assets/img/me.jpg');
+    background-size: 232px 308px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.copyrightInfo{
+    font-size: 20px;
+    color: white;
+    text-align: left center;
+}
