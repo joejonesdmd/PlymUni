@@ -242,15 +242,60 @@ footer{
 
 .contactBottom{
     grid-area: contactBottom;
-    background-image: url('../assets/img/me.jpg');
-    background-size: 232px 308px;
-    background-repeat: no-repeat;
-    background-position: center;
-    
 }
+
 
 .copyrightInfo{
     font-size: 20px;
     color: white;
     text-align: left center;
+}
+
+.formContainer{
+    width: 100%;
+    background-color: #096074;
+    border-radius: 10px;
+    border: 4px solid #099074;
+    padding: 15px;
+}
+
+.formContainer > h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    font-size: 28px;
+    justify-content: space-around;
+}
+
+.formContainer > form > input,
+.formContainer > form > textarea{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #099074;
+}
+
+.formContainer > form > input:focus,
+.formContainer > form > textarea:focus{
+    border-color: blue;
+}
+
+#nameField, #emailField{
+    height: 30px;
+}
+
+#messageField{
+    resize: none;
+}
+
+#submitBTN {
+    background-color: #094074;
+    color: #fff;
+    transition: background-color 0.5s;
+
 }

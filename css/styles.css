@@ -18,7 +18,7 @@ body{
     height: 100vh;
     font-family: 'Baloo Bhaina 2', Arial, Helvetica, sans-serif;
 }
-/* Selecting tagname "header" */
+
 
 .homePageContent{
     display: grid;
@@ -140,8 +140,16 @@ footer{
 }
 
 
-@media only screen and (max-width: 1000){
+@media only screen and (max-width: 500){
+
 .leftContent{
     background-image: none;
+    width: 100vw;
+
 }
+
+.box{
+    width: 50vw;
+}
+
 }
