@@ -140,12 +140,15 @@ footer{
 }
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 470px){
 
 .leftContent{
     background-image: none;
     background-color: cornflowerblue;
     width: 100vw;
+}
+.leftContent h1 {
+    font-size: 45px;
 }
 
 .homePageContent{
