@@ -1,5 +1,8 @@
 var aboutBox = document.querySelector("#Box1");
-var iconAbout = document.querySelector("#iconAbout");
+var iconAbout = document.querySelector("#iconAbout");var mobileNavBtn = document.querySelector ('#mobile-nav-btn');
+var navigationList = document.querySelector('.navigation-list');
+
+
 aboutBox.addEventListener("mouseover", function(e){
     iconAbout.innerHTML='About me'
 })
@@ -32,4 +35,14 @@ contactBox.addEventListener("mouseover", function(e){
 })
 contactBox.addEventListener("mouseleave", function(e){
     iconContact.innerHTML='<i class="fa fa-phone" aria-hidden="true">'
+})
+
+
+mobileNavBtn.addEventListener('click', function () {
+    navigationList.classList.toggle('navigation-list-closed')
+    navigationList.classList.add('navigation-transition');
+})
+
+navigationList.addEventListener('transitionend',function () {
+    navigationList.classList.remove('navigation-transition');
 })

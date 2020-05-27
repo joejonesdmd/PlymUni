@@ -147,7 +147,7 @@ header{
 }
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 600px){
     .contactGrid{
         display: grid;
         grid-template-columns: 1fr;
@@ -157,6 +157,13 @@ header{
         width: 95%;
         
     }
+
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+
 }
 
 footer{
@@ -297,5 +304,130 @@ footer{
     background-color: #094074;
     color: #fff;
     transition: background-color 0.5s;
+
+}
+
+.burgerIconContainer{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.burgerIcon:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+.burgerIcon{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px,15px;
+    background-color: transparent;
+    display: none;
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.burgerIcon:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.navigation-item{
+    margin: 0 10px;
+    
+}
+
+.navigation-item a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.navigation-item a:hover{
+    color: black;
+
+    
+}
+
+.bannerImage{
+    width: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1000px){
+   
+    .aboutGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "aboutLeft"
+                             "aboutBottom"
+                             "aboutRight";
+        width: 95%;
+    }
+
+    .navigation-item a{
+        text-decoration: none;
+        color: white;
+    } 
+
+    .main-nav{
+        grid-area: nav;
+    }
+    .navigation-list{
+        display: inline-block;
+        width: 100%;
+        height: 150px;
+        opacity: 1;
+
+    }
+
+    .navigation-transition{
+        transition: 0.3s height ease-in-out, 0.2s opacity ease-in;
+        transition-delay: 0s, 0.2s;
+    }
+
+
+    .navigation-list-closed{
+        opacity: 0;
+        height: 0;
+        transition-delay: 0s, 0.2s;
+    }
+
+    .navigation-item{
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        border-bottom: 2px solid #fff;
+    }
+
+    
+    .navigation-item:hover{
+        background-color: #777;
+    }
+
+
+    .burgerIcon{
+        display: block;
+        grid-area: right;
+    }
+
+    .socialMedia{
+        font-size: 30px;
+        vertical-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
 
 }

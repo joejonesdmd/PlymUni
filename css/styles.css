@@ -140,12 +140,16 @@ footer{
 }
 
 
-@media only screen and (max-width: 500){
+@media only screen and (max-width: 500px){
 
 .leftContent{
     background-image: none;
+    background-color: cornflowerblue;
     width: 100vw;
+}
 
+.homePageContent{
+    grid-template-columns: auto;
 }
 
 .box{
