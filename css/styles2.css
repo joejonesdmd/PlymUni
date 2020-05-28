@@ -101,14 +101,28 @@ header{
 
 #projectBox1{
 
-    background-image: url(#);
-    background-color: #00072D;
     background-size: cover;
     opacity: 1;
     word-wrap: break-word;
     text-decoration: none;
+    object-fit: cover;
+    font-size: 1px;
 
+    background-image: url('../assets/img/DAT402A.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
 }
+
+#projectBox1:hover{
+    background-image: url('../assets/img/DAT402B.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0%);
+}
+
 
 #projectBox2{
 
@@ -118,7 +132,22 @@ header{
     opacity: 1;
     word-wrap: break-word;
     text-decoration: none;
+    font-size: 1px;
 
+    background-image: url('../assets/img/DAT404A.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+
+}
+
+#projectBox2:hover{
+    background-image: url('../assets/img/DAT404B.png');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0%);
 }
 
 #projectBox3{
@@ -129,7 +158,100 @@ header{
     opacity: 1;
     word-wrap: break-word;
     text-decoration: none;
+    font-size: 1px;
 
+    background-image: url('../assets/img/DAT405A.png');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+
+}
+
+#projectBox3:hover{
+    background-image: url('../assets/img/DAT405B.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0%);
+}
+
+#projectBox4{
+
+    background-image: url(#);
+    background-color: #0087002D;
+    background-size: cover;
+    opacity: 1;
+    word-wrap: break-word;
+    text-decoration: none;
+    font-size: 1px;
+
+    background-image: url('../assets/img/DAT406A.png');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+
+}
+
+#projectBox4:hover{
+    background-image: url('../assets/img/DAT406B.png');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0%);
+}
+
+#projectBox5{
+
+    background-image: url(#);
+    background-color: #0087002D;
+    background-size: cover;
+    opacity: 1;
+    word-wrap: break-word;
+    text-decoration: none;
+    font-size: 1px;
+
+    background-image: url('../assets/img/DAT411A.png');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+
+}
+
+#projectBox5:hover{
+    background-image: url('../assets/img/DAT411B.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0%);
+}
+
+#projectBox6{
+
+    background-image: url(#);
+    background-color: #0087002D;
+    background-size: cover;
+    opacity: 1;
+    word-wrap: break-word;
+    text-decoration: none;
+    font-size: 1px;
+
+    background-image: url('../assets/img/DAT413A.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+
+}
+
+#projectBox6:hover{
+    background-image: url('../assets/img/DAT413B.JPG');
+    background-size: 33vw 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0%);
 }
 
 
@@ -147,7 +269,7 @@ header{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .contactGrid{
         display: grid;
         grid-template-columns: 1fr;
@@ -163,6 +285,62 @@ header{
         margin: 0 auto;
     }
 
+    .pboxs{ 
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .pbox{
+        width: 100vw;
+        height: 38.3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    
+    }
+
+    .sorryText{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #projectBox1 {
+        background-size: 100vw 400px;
+    }
+    #projectBox1:hover {
+        background-size: 100vw 400px;
+    }
+    #projectBox2 {
+        background-size: 100vw 400px;
+    }
+    #projectBox2:hover {
+        background-size: 100vw 400px;
+    }
+    #projectBox3 {
+        background-size: 100vw 400px;
+    }
+    #projectBox3:hover {
+        background-size: 100vw 400px;
+    }
+    #projectBox4 {
+        background-size: 100vw 400px;
+    }
+    #projectBox4:hover {
+        background-size: 100vw 400px;
+    }
+    #projectBox5 {
+        background-size: 100vw 400px;
+    }
+    #projectBox5:hover {
+        background-size: 100vw 400px;
+    }
+    #projectBox6 {
+        background-size: 100vw 400px;
+    }
+    #projectBox6:hover {
+        background-size: 100vw 400px;
+    }
 
 }
 
@@ -194,6 +372,11 @@ footer{
 .mainText{
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.sorryText{
+    font-size: 50px;
+    text-align: center;
 }
 
 .aboutGrid{
@@ -325,12 +508,7 @@ footer{
     background-color: transparent;
     display: none;
 }
-.navigation-list{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    
-}
+
 
 .burgerIcon:hover{
     background-color: tomato;
@@ -363,6 +541,8 @@ footer{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+
 
 
 @media only screen and (max-width: 1000px){

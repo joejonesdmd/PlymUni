@@ -140,7 +140,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 1000px){
 
 .leftContent{
     background-image: none;
